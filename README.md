@@ -43,3 +43,21 @@ Scripts often need to interact with Exterior and Google Drive. To do so, the fil
 2. It checks Exterior for the switch for the script.
 3. If the switch is enabled, the script is run. Upon completion of execution of the script, it's switch in Exterior is turned off automatically. If you turn the script's switch off while the script is running, the script will be terminated without it's execution completing.
 
+<br>
+
+## Accessing user variables from the script
+User variables such as the sheet name, app path, script folder path, GitHub credentials etc are available in the environment variables.
+```py
+import os
+
+
+print(os.environ["SC_COMPUTER_NAME"]) #Prints the name of sheet in Exterior connected to the ScriptCaster on the machine
+print(os.environ["SC_APP_FOLDER_PATH"]) # Prints path to ScriptCaster app directory
+print(os.environ["SC_USERSCRIPTS_FOLDER_PATH"]) # Prints path to folder containing the scripts
+print(os.environ["SC_GITHUB_USERNAME"]) # Prints username of GitHub account containing the scripts 
+print(os.environ["SC_GITHUB_REPO_NAME"]) # Prints name of GitHub repository containing the scripts 
+print(os.environ["SC_GITHUB_ACCESS_TOKEN"]) # Prints personal access token
+
+# To obtain the path to the credentials folder -
+print(os.path.join(os.environ["SC_APP_FOLDER_PATH"],"creds/")
+```
