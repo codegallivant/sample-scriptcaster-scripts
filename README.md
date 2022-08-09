@@ -11,22 +11,22 @@ Sample scripts for [script-caster app](https://github.com/codegallivant/script-c
 ## Script descriptions
 
 - `GET_LOCATION.pyw`<br>
-  Gets IP location of computer and writes information to Exterior.
+  Gets IP location of target machine and writes information to Exterior.
 
 - `UPLOAD_SCREENSHOT.pyw`  <br>
-  Takes a screenshot of the computer and uploads it to a Google Drive folder.
+  Takes a screenshot of the target machine and uploads it to a Google Drive folder.
 
 - `STAY_AWAKE.pyw`<br>
   Forces computer to not go to sleep by pressing the F15 key every 60 seconds.
 
 - `PIP_PACKAGE.pyw`<br>
-  Installs/updates/uninstalls pip packages. Useful if you're creating a python script using pip modules which are currently not installed on the user's computer.
+  Installs/updates/uninstalls pip packages. Useful if you're creating a python script using pip modules which are currently not installed on the target computer. The package name is inputted in Exterior.
 
 - `AlERT_BOX.pyw`<br>
-  Creates an alert box. You can specify the title and text using Exterior.
+  Creates an alert box. You can input the title and text in Exterior.
 
 - `EXECUTE_LINE.pyw`<br>
-  Executes a line of code typed in Exterior.
+  Executes a line of code. You can input the line in Exterior.
 
 - `NEXT_VIRTUAL_DESKTOP.pyw & PREVIOUS_VIRTUAL_DESKTOP.pyw`<br>
   Moves to subsequent/previous virtual desktop.
