@@ -59,5 +59,5 @@ print(os.environ["SC_GITHUB_REPO_NAME"]) # Prints name of GitHub repository cont
 print(os.environ["SC_GITHUB_ACCESS_TOKEN"]) # Prints personal access token
 
 # To obtain the path to the credentials folder -
-print(os.path.join(os.environ["SC_APP_FOLDER_PATH"],"creds/")
+print(os.path.join(os.environ["SC_APP_FOLDER_PATH"],"creds/"))
 ```
