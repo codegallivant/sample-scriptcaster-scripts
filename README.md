@@ -31,6 +31,15 @@ Sample scripts for [script-caster app](https://github.com/codegallivant/script-c
 - `NEXT_VIRTUAL_DESKTOP.pyw & PREVIOUS_VIRTUAL_DESKTOP.pyw`<br>
   Moves to subsequent/previous virtual desktop.
 
+<br>
 
 ## Tools to deal with Exterior and Google Drive
 Scripts often need to interact with Exterior and Google Drive. To do so, the files `lib/exterior_connection.py` and `lib/gdrive_pyinteract.py` can be imported. Examples of their usage can be found in `UPLOAD_SCREENSHOT.pyw`, `GET_LOCATION.pyw` and a few others. You can also find more details on `lib/gdrive_pyinteract.py` in this [repository](https://github.com/codegallivant/gdrive-interact-python).
+
+<br>
+
+## How script-caster runs the scripts
+1. It downloads the all the files in this repository into a folder of your choice. You can set the folder path in Settings (Visible in app GUI).
+2. It checks Exterior for the switch for the script.
+3. If the switch is enabled, the script is run. Upon completion of execution of the script, it's switch in Exterior is turned off automatically. If you turn the script's switch off while the script is running, the script will be terminated without it's execution completing.
+
